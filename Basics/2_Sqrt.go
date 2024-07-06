@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(math.Pi)
+	fmt.Println("sqrt number is ", math.Sqrt(7))
 }

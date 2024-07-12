@@ -6,6 +6,12 @@ import (
 )
 
 func main() {
+	FileLog("test 1111")
+	FileLog("test 2222")
+	FileLog("test 3333")
+}
+
+func FileLog(message string) bool {
 	// 打開檔案，若檔案不存在則創建
 	file, err := os.OpenFile("app.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 	if err != nil {
@@ -17,7 +23,7 @@ func main() {
 	log.SetOutput(file)
 
 	// 寫入 log
-	log.Println("這是一條資訊 log")
-	log.Println("這是一條警告 log")
-	log.Println("這是一條錯誤 log")
+	log.Println(message)
+
+	return true
 }

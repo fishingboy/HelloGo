@@ -17,7 +17,7 @@ func (v Vertex) echo() {
 	fmt.Println(v)
 }
 
-// golang 沒有 class
+// golang 沒有 class (太像 C 語言了吧！？)
 // 要增加 method 要定義好 struct
 // 然後在 struct 上再新增 function
 func main() {

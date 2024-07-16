@@ -13,7 +13,7 @@ func main() {
 
 func FileLog(message string) bool {
 	// 打開檔案，若檔案不存在則創建
-	file, err := os.OpenFile("app.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
+	file, err := os.OpenFile("D:\\app.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 	if err != nil {
 		log.Fatalf("無法打開或創建 log 檔案: %v", err)
 	}

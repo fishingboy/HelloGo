@@ -27,8 +27,8 @@ func (d *Dog) Speak() {
 
 // 定義一個 Cat 結構體，模擬另一個 "子類"
 type Cat struct {
-	Animal
-	Color string
+	Animal // 類似於 php trait 的用法，直接繼承了可用的 function
+	Color  string
 }
 
 // 覆蓋 Animal 的 Speak 方法
